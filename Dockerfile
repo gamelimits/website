@@ -5,7 +5,7 @@ WORKDIR /app
 FROM base AS build
 COPY package.json pnpm-lock.yaml tsconfig.json ./
 RUN pnpm install --frozen-lockfile
-COPY tailwind.config.js postcss.config.js next.config.mjs next-env.d.ts src ./
+COPY tailwind.config.js postcss.config.js next.config.mjs src ./
 RUN pnpm build
 
 FROM base AS production
