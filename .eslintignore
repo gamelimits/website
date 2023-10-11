@@ -5,3 +5,5 @@ pnpm-lock.yaml
 .next
 next-env.d.ts
 next.config.mjs
+postcss.config.js
+tailwind.config.js
